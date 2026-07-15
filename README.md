@@ -68,62 +68,46 @@ Atualmente estou aprendendo:
 ## 🎮 Pac-Man Animation
 
 <div align="center">
-  <style>
-    @keyframes pacman-mouth {
-      0%, 100% { clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 100%, 50% 50%); }
-      50% { clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 50% 100%, 50% 50%); }
-    }
+  <svg width="100%" height="80" viewBox="0 0 500 80" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <style>
+        @keyframes pacman-move {
+          0% { transform: translateX(-50px); }
+          100% { transform: translateX(500px); }
+        }
+        @keyframes mouth {
+          0%, 100% { clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 100%, 50% 50%); }
+          50% { clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 50% 100%, 50% 50%); }
+        }
+        @keyframes dot-blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.3; }
+        }
+        .pacman { animation: pacman-move 4s linear infinite; }
+        .dot1 { animation: dot-blink 1.5s infinite; }
+        .dot2 { animation: dot-blink 1.5s infinite 0.2s; }
+        .dot3 { animation: dot-blink 1.5s infinite 0.4s; }
+        .dot4 { animation: dot-blink 1.5s infinite 0.6s; }
+        .dot5 { animation: dot-blink 1.5s infinite 0.8s; }
+      </style>
+    </defs>
     
-    @keyframes move-pacman {
-      0% { left: -50px; }
-      100% { left: calc(100% + 50px); }
-    }
+    <!-- Background -->
+    <rect width="500" height="80" fill="#0d1117" rx="8"/>
     
-    @keyframes blink-dots {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
-    }
+    <!-- Dots -->
+    <circle class="dot1" cx="50" cy="40" r="4" fill="#FFD700"/>
+    <circle class="dot2" cx="120" cy="40" r="4" fill="#FFD700"/>
+    <circle class="dot3" cx="190" cy="40" r="4" fill="#FFD700"/>
+    <circle class="dot4" cx="260" cy="40" r="4" fill="#FFD700"/>
+    <circle class="dot5" cx="330" cy="40" r="4" fill="#FFD700"/>
     
-    .pacman-game {
-      position: relative;
-      width: 100%;
-      height: 60px;
-      background: linear-gradient(90deg, #1a1a2e 0%, #16213e 50%, #1a1a2e 100%);
-      border-radius: 10px;
-      overflow: hidden;
-      margin: 20px auto;
-    }
-    
-    .pacman-character {
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      background: #FFD700;
-      border-radius: 100% 0 100% 100%;
-      top: 10px;
-      animation: move-pacman 4s linear infinite, pacman-mouth 0.3s infinite;
-    }
-    
-    .dot {
-      position: absolute;
-      width: 8px;
-      height: 8px;
-      background: #FFD700;
-      border-radius: 50%;
-      top: 26px;
-      animation: blink-dots 1.5s infinite;
-    }
-  </style>
-  
-  <div class="pacman-game">
-    <div class="pacman-character"></div>
-    <div class="dot" style="left: 10%; animation-delay: 0s;"></div>
-    <div class="dot" style="left: 25%; animation-delay: 0.2s;"></div>
-    <div class="dot" style="left: 40%; animation-delay: 0.4s;"></div>
-    <div class="dot" style="left: 55%; animation-delay: 0.6s;"></div>
-    <div class="dot" style="left: 70%; animation-delay: 0.8s;"></div>
-    <div class="dot" style="left: 85%; animation-delay: 1s;"></div>
-  </div>
+    <!-- Pac-Man -->
+    <g class="pacman">
+      <circle cx="20" cy="40" r="16" fill="#FFD700" clip-path="url(#mouth-clip)"/>
+      <circle cx="20" cy="40" r="16" fill="#FFD700"/>
+    </g>
+  </svg>
 </div>
 
 ---
