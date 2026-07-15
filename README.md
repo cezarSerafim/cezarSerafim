@@ -67,47 +67,33 @@ Atualmente estou aprendendo:
 
 ## 🎮 Pac-Man Animation
 
-<div align="center">
-  <svg width="100%" height="80" viewBox="0 0 500 80" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <style>
-        @keyframes pacman-move {
-          0% { transform: translateX(-50px); }
-          100% { transform: translateX(500px); }
-        }
-        @keyframes mouth {
-          0%, 100% { clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 100%, 50% 50%); }
-          50% { clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 50% 100%, 50% 50%); }
-        }
-        @keyframes dot-blink {
-          0%, 100% { opacity: 1; }
-          50% { opacity: 0.3; }
-        }
-        .pacman { animation: pacman-move 4s linear infinite; }
-        .dot1 { animation: dot-blink 1.5s infinite; }
-        .dot2 { animation: dot-blink 1.5s infinite 0.2s; }
-        .dot3 { animation: dot-blink 1.5s infinite 0.4s; }
-        .dot4 { animation: dot-blink 1.5s infinite 0.6s; }
-        .dot5 { animation: dot-blink 1.5s infinite 0.8s; }
-      </style>
-    </defs>
-    
-    <!-- Background -->
-    <rect width="500" height="80" fill="#0d1117" rx="8"/>
-    
-    <!-- Dots -->
-    <circle class="dot1" cx="50" cy="40" r="4" fill="#FFD700"/>
-    <circle class="dot2" cx="120" cy="40" r="4" fill="#FFD700"/>
-    <circle class="dot3" cx="190" cy="40" r="4" fill="#FFD700"/>
-    <circle class="dot4" cx="260" cy="40" r="4" fill="#FFD700"/>
-    <circle class="dot5" cx="330" cy="40" r="4" fill="#FFD700"/>
-    
-    <!-- Pac-Man -->
-    <g class="pacman">
-      <circle cx="20" cy="40" r="16" fill="#FFD700" clip-path="url(#mouth-clip)"/>
-      <circle cx="20" cy="40" r="16" fill="#FFD700"/>
-    </g>
-  </svg>
-</div>
+<svg width="100%" height="100" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes pacman-move { 0% { transform: translateX(-50px); } 100% { transform: translateX(450px); } }
+      @keyframes mouth-anim { 0%, 100% { d: path('M 20 30 A 20 20 0 0 1 20 70 L 30 50 Z'); } 50% { d: path('M 20 20 A 20 20 0 1 1 20 80 L 30 50 Z'); } }
+      @keyframes dot-fade { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+      .pacman { animation: pacman-move 5s linear infinite; }
+      .dot1 { animation: dot-fade 1.5s infinite; }
+      .dot2 { animation: dot-fade 1.5s infinite 0.25s; }
+      .dot3 { animation: dot-fade 1.5s infinite 0.5s; }
+      .dot4 { animation: dot-fade 1.5s infinite 0.75s; }
+    </style>
+  </defs>
+  
+  <rect width="400" height="100" fill="#0d1117" rx="10"/>
+  
+  <!-- Dots -->
+  <circle class="dot1" cx="60" cy="50" r="5" fill="#FFD700"/>
+  <circle class="dot2" cx="130" cy="50" r="5" fill="#FFD700"/>
+  <circle class="dot3" cx="200" cy="50" r="5" fill="#FFD700"/>
+  <circle class="dot4" cx="270" cy="50" r="5" fill="#FFD700"/>
+  
+  <!-- Pac-Man -->
+  <g class="pacman">
+    <circle cx="20" cy="50" r="18" fill="#FFD700"/>
+    <polygon points="20,50 35,40 35,60" fill="#0d1117"/>
+  </g>
+</svg>
 
 ---
