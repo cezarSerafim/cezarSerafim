@@ -8,8 +8,8 @@ Sou um desenvolvedor em formação com experiência prática em suporte de TI e 
 
 ## 🔭 O que eu faço
 - Estágio em TI na CONAB — suporte técnico.
-- Desenvolvimento de projetos acadêmicos e pessoais focados em IoT, Machine Learning e aplicações web full‑stack.
-- Exploração contínua de modelos e ferramentas de IA para prototipagem rápida e POCs.
+- Desenvolvimento de projetos acadêmicos e pessoais em aplicações web e IoT.
+- Uso de ferramentas e modelos de IA para prototipar e explorar novas ideias.
 
 ---
 
