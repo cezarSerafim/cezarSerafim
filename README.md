@@ -2,12 +2,12 @@
 
 Estudante de Análise e Desenvolvimento de Sistemas na PUCPR | Estagiário de TI na CONAB (Curitiba, PR)
 
-Sou um desenvolvedor em formação com experiência prática em suporte de TI e forte interesse em desenvolvimento de software e Inteligência Artificial. Atualmente venho aprofundando conhecimentos em Java, Python e técnicas de Machine Learning para construir soluções práticas e escaláveis.
+Sou um desenvolvedor em formação com experiência prática em suporte de TI e forte interesse em desenvolvimento de software e Inteligência Artificial. Atualmente venho aprofundando conhecimentos em Java, Python para construir soluções práticas e escaláveis.
 
 ---
 
 ## 🔭 O que eu faço
-- Estágio em TI na CONAB — suporte técnico, automação de processos e integração de sistemas.
+- Estágio em TI na CONAB — suporte técnico.
 - Desenvolvimento de projetos acadêmicos e pessoais focados em IoT, Machine Learning e aplicações web full‑stack.
 - Exploração contínua de modelos e ferramentas de IA para prototipagem rápida e POCs.
 
@@ -20,12 +20,11 @@ Sou um desenvolvedor em formação com experiência prática em suporte de TI e 
 ![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=flat&logo=openai&logoColor=white) 
 ![Claude](https://img.shields.io/badge/Claude-D97757?style=flat&logo=anthropic&logoColor=white)
 
-Principais competências:
+Atualmente estou aprendendo:
 - Linguagens: Java, Python
 - Web: React.js, Firebase (Auth, Firestore, Hosting)
-- Dados & ML: Scikit‑Learn, pipelines, engenharia de features
 - IoT: ESP32, MicroPython, integração com dashboards (ThingSpeak)
-- Ferramentas: Git, Docker (básico), Linux
+- Ferramentas: Git, Linux
 
 ---
 
